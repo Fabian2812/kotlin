@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Permite consultar la API externa desde el teléfono. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- La clave guardada no se incluye en copias de seguridad; solo se usa HTTPS. -->
+    <application
+        android:allowBackup="false"
+        android:label="Consulta Inventario"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:usesCleartextTraffic="false">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
